@@ -17,4 +17,7 @@ public class BinaryGrap {
         return 0;
     }
 
+    public String convertToBinaryNumber(int decimalNumber) {
+        return "0";
+    }
 }
