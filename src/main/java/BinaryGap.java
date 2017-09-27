@@ -1,8 +1,8 @@
-public class BinaryGrap {
+class BinaryGap {
 
-    public static final int BINARY_BASE = 2;
-    public static final String ONE = "1";
-    public static final String ZERO = "0";
+    private static final int BINARY_BASE = 2;
+    private static final String ONE = "1";
+    private static final String ZERO = "0";
 
     public int calculateGap(int numberBaseTen) {
         if ( numberBaseTen < 0 )
@@ -55,7 +55,7 @@ public class BinaryGrap {
     }
 
     public String convertToBinaryNumber(int decimalNumber) {
-        StringBuffer binaryNumber = new StringBuffer ( );
+        StringBuilder binaryNumber = new StringBuilder ( );
         do {
             binaryNumber.append (decimalNumber % BINARY_BASE);
             decimalNumber = decimalNumber / BINARY_BASE;
