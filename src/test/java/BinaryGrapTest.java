@@ -20,12 +20,19 @@ public class BinaryGrapTest {
     public void should_raise_exception_when_negative_number() {
         binaryGrap.calculateGap (-1);
     }
+
     @Test
     public void should_return_1_in_case_of_5() {
         Assert.assertEquals (1, binaryGrap.calculateGap (5));
     }
+
     @Test
     public void should_return_0_in_case_of_1() {
         Assert.assertEquals (0, binaryGrap.calculateGap (1));
+    }
+
+    @Test
+    public void should_return_2_in_case_of_9() {
+        Assert.assertEquals (2, binaryGrap.calculateGap (9));
     }
 }

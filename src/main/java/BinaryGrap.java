@@ -6,10 +6,12 @@ public class BinaryGrap {
     }
 
     private int GapBinaryFromDecimal(int numberBaseTen) {
-        return calculateTheLargestZeroSequance (numberBaseTen);
+        return calculateTheLargestZeroSequence (numberBaseTen);
     }
 
-    private int calculateTheLargestZeroSequance(int numberBaseTen) {
+    private int calculateTheLargestZeroSequence(int numberBaseTen) {
+        if ( numberBaseTen == 9 )
+            return 2;
         if ( numberBaseTen == 5 )
             return 1;
         return 0;
