@@ -8,4 +8,10 @@ public class BinaryGrapTest {
         final BinaryGrap binaryGrap = new BinaryGrap ( );
         Assert.assertEquals (0, binaryGrap.calculateGrap (0));
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void should_raise_exception_when_negative_number() {
+        final BinaryGrap binaryGrap = new BinaryGrap ( );
+        binaryGrap.calculateGrap (-1);
+    }
 }
