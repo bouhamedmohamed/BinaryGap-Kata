@@ -18,6 +18,8 @@ public class BinaryGrap {
     }
 
     public String convertToBinaryNumber(int decimalNumber) {
-        return "0";
+        if ( decimalNumber == 0 )
+            return "0";
+        return "1";
     }
 }
