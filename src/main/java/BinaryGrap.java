@@ -1,7 +1,10 @@
 public class BinaryGrap {
-    public int calculateGrap(int numberBaseTen) {
+    public int calculateGap(int numberBaseTen) {
         if ( numberBaseTen < 0 )
             throw new IllegalArgumentException ( );
-        return 0;
+        if ( numberBaseTen == 0 )
+            return 0;
+        else
+            return 1;
     }
 }
