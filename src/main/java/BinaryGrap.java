@@ -13,7 +13,7 @@ public class BinaryGrap {
         return calculateTheLargestZeroSequence (binaryNumber);
     }
 
-    private int calculateTheLargestZeroSequence(String numberBaseTen) {
+    public int calculateTheLargestZeroSequence(String numberBaseTen) {
         if ( numberBaseTen.equals ("1001") )
             return 2;
         if ( numberBaseTen.equals ("101") )
