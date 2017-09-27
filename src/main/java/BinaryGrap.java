@@ -14,6 +14,8 @@ public class BinaryGrap {
     }
 
     public int calculateTheLargestZeroSequence(String numberBaseTen) {
+        if ( numberBaseTen.isEmpty ( ) )
+            throw new IllegalArgumentException ( );
         if ( numberBaseTen.equals ("1001") )
             return 2;
         if ( numberBaseTen.equals ("101") )
