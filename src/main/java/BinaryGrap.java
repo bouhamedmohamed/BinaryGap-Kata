@@ -1,4 +1,7 @@
 public class BinaryGrap {
+
+    public static final int BINARY_BASE = 2;
+
     public int calculateGap(int numberBaseTen) {
         if ( numberBaseTen < 0 )
             throw new IllegalArgumentException ( );
@@ -18,8 +21,11 @@ public class BinaryGrap {
     }
 
     public String convertToBinaryNumber(int decimalNumber) {
-        if ( decimalNumber == 0 )
-            return "0";
-        return "1";
+        StringBuffer binaryNumber = new StringBuffer ( );
+        do {
+            binaryNumber.append (decimalNumber % BINARY_BASE);
+            decimalNumber = decimalNumber / BINARY_BASE;
+        } while (decimalNumber != 0);
+        return binaryNumber.toString ( );
     }
 }

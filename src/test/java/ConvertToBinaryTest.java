@@ -20,4 +20,10 @@ public class ConvertToBinaryTest {
     public void should_return_1_when_1() {
         Assert.assertEquals ("1", binaryGrap.convertToBinaryNumber (1));
     }
+
+    @Test
+    public void should_return_101_1001_when_5_and_9() {
+        Assert.assertEquals ("101", binaryGrap.convertToBinaryNumber (5));
+        Assert.assertEquals ("1001", binaryGrap.convertToBinaryNumber (9));
+    }
 }
