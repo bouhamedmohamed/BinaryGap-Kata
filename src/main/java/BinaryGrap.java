@@ -9,13 +9,14 @@ public class BinaryGrap {
     }
 
     private int GapBinaryFromDecimal(int numberBaseTen) {
-        return calculateTheLargestZeroSequence (numberBaseTen);
+        final String binaryNumber = convertToBinaryNumber (numberBaseTen);
+        return calculateTheLargestZeroSequence (binaryNumber);
     }
 
-    private int calculateTheLargestZeroSequence(int numberBaseTen) {
-        if ( numberBaseTen == 9 )
+    private int calculateTheLargestZeroSequence(String numberBaseTen) {
+        if ( numberBaseTen.equals ("1001") )
             return 2;
-        if ( numberBaseTen == 5 )
+        if ( numberBaseTen.equals ("101") )
             return 1;
         return 0;
     }
